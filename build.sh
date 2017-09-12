@@ -1,7 +1,7 @@
 #/bin/bash
 set -e
 cd src
-curk -jsSL https://caddyserver.com/download/linux/amd64 -o caddy.tar.gz
+curl -jsSL https://caddyserver.com/download/linux/amd64 -o caddy.tar.gz
 tar -xzvf caddy.tar.gz
 rm caddy.tar.gz
 chmod 0777 caddy
