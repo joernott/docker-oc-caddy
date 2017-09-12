@@ -1,0 +1,6 @@
+{$SERVERNAME}:80 {
+  tls off
+  root /html
+  log / stdout "{combined}"
+  errors stderr
+}
