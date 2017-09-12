@@ -2,7 +2,7 @@
 set -e
 cd src
 curl -jsSL https://caddyserver.com/download/linux/amd64 -o caddy.tar.gz
-tar -xzvf caddy.tar.gz
+tar -xzvf caddy.tar.gz caddy
 rm caddy.tar.gz
 chmod 0777 caddy
 cd ..
