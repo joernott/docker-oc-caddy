@@ -3,7 +3,7 @@ set -e
 set -x
 curl -o ./functions.sh https://raw.githubusercontent.com/joernott/docker-oc-install-library/master/install_functions.sh
 source ./functions.sh
-
+PARENT_HISTORY="scratch"
 patch_dockerfile
 cd src
 curl -jsSL https://caddyserver.com/download/linux/amd64 -o caddy.tar.gz
