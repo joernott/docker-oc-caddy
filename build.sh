@@ -6,9 +6,7 @@ source ./functions.sh
 PARENT_HISTORY="scratch"
 patch_dockerfile
 cd src
-curl -jsSL 'https://caddyserver.com/download/linux/amd64?license=' -o caddy.tar.gz
-tar -xzvf caddy.tar.gz caddy
-rm caddy.tar.gz
+curl -jsSL 'https://mgmt0.be.ott-consult.de/repo/caddy/caddy' -o caddy
 chmod 0777 caddy
 cd ..
 docker build -t registry.ott-consult.de/oc/caddy .
