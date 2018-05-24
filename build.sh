@@ -6,7 +6,7 @@ source ./functions.sh
 PARENT_HISTORY="scratch"
 patch_dockerfile
 cd src
-curl -jksSL 'https://mgmt0.be.ott-consult.de/repo/caddy/caddy' -o caddy
+curl -jksSL 'http://mgmt0.be.ott-consult.de/repo/caddy/caddy' -o caddy
 chmod 0777 caddy
 cd ..
 docker build -t registry.ott-consult.de/oc/caddy .
