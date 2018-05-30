@@ -11,6 +11,6 @@ curl -jksSL 'http://mgmt0.be.ott-consult.de/repo/caddy/caddy.sha256' -o caddy.sh
 chmod 0777 caddy
 sha256sum -c caddy.sha256
 cd ..
-docker build -t registry.ott-consult.de/oc/caddy .
-docker push registry.ott-consult.de/oc/caddy
+docker build -t registry.ott-consult.de/oc/caddy:latest .
+docker push registry.ott-consult.de/oc/caddy:latest
 
