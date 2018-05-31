@@ -1,8 +1,8 @@
-FROM registry.ott-consult.de/oc/base:latest
+FROM scratch
 LABEL maintainer="joern.ott@ott-consult.de"
-ENV GIT_COMMIT="" \
-    IMAGE_HISTORY=" « scratch"
+ENV GIT_COMMIT="x" \
+    IMAGE_HISTORY="x"
 
 COPY src /
-ENTRYPOINT [ "/caddy" ]
+ENTRYPOINT [ "/caddy", "-conf", "Caddyfile" ]
 

@@ -1,7 +1,7 @@
 #/bin/bash
 set -e
 set -x
-curl -o ./functions.sh https://raw.githubusercontent.com/joernott/docker-oc-install-library/master/install_functions.sh
+curl -jksSLo ./functions.sh https://raw.githubusercontent.com/joernott/docker-oc-install-library/master/install_functions.sh
 source ./functions.sh
 PARENT_HISTORY="scratch"
 patch_dockerfile
